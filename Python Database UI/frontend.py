@@ -1,0 +1,45 @@
+root = Tk()
+root.title("Book Management System")
+
+Label(root, text="Unique Number:").grid(row=0, column=0, sticky=W)
+Label(root, text="Title:").grid(row=1, column=0, sticky=W)
+Label(root, text="Author:").grid(row=2, column=0, sticky=W)
+Label(root, text="Year:").grid(row=3, column=0, sticky=W)
+Label(root, text="Description:").grid(row=4, column=0, sticky=W)
+Label(root, text="Pages:").grid(row=5, column=0, sticky=W)
+Label(root, text="Price:").grid(row=6, column=0, sticky=W)
+Label(root, text="Language:").grid(row=7, column=0, sticky=W)
+Label(root, text="Publisher:").grid(row=8, column=0, sticky=W)
+Label(root, text="Genre:").grid(row=9, column=0, sticky=W)
+
+# Entry fields
+unique_number_entry = Entry(root)
+title_entry = Entry(root)
+author_entry = Entry(root)
+yr_entry = Entry(root)
+description_entry = Text(root, width=40, height=5)
+pages_entry = Entry(root)
+price_entry = Entry(root)
+language_var = StringVar(root)
+language_var.set("English")
+language_option = OptionMenu(root, language_var, "English", "Japanese")
+publisher_entry = Entry(root)
+genre_entry = Entry(root)
+
+# Place entry fields
+unique_number_entry.grid(row=0, column=1)
+title_entry.grid(row=1, column=1)
+author_entry.grid(row=2, column=1)
+yr_entry.grid(row=3, column=1)
+description_entry.grid(row=4, column=1)
+pages_entry.grid(row=5, column=1)
+price_entry.grid(row=6, column=1)
+language_option.grid(row=7, column=1)
+publisher_entry.grid(row=8, column=1)
+genre_entry.grid(row=9, column=1)
+
+# Buttons
+Button(root, text="Save", command=save_book).grid(row=10, column=0, pady=10)
+Button(root, text="Display Books", command=display_books).grid(row=10, column=1)
+
+root.mainloop()
