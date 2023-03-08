@@ -1,0 +1,2 @@
+Function to select a subset of elements from an array, maintaining a fixed shape and centered on a specified element. 
+If the shape exceeds the bounds of the array, pad the missing areas with a designated "fill" value.
