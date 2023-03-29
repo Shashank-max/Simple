@@ -1,0 +1,2 @@
+Calculate a 95% confidence interval for the mean of a 1D array X using bootstrapping. 
+This involves resampling the elements of the array with replacement N times, computing the mean of each sample, and then determining the 2.5th and 97.5th percentiles over these means to establish the confidence interval.
