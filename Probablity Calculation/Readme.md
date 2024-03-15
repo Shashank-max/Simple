@@ -1,0 +1,1 @@
+Python code for rolling two dices and telling the possibilities to get the same number on both
